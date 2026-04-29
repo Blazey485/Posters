@@ -43,7 +43,7 @@ function takeBounty(btn) {
 	const name = card.querySelector("img").alt;
 
 	const shot = new Audio(
-		"../Posters/bountyposters/gunshot.mp3",
+		"../Posters/Sound effects/gunshot.mp3",
 	);
 	shot.play();
 

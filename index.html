@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Bounty Board</title>
+		<link
+			rel="stylesheet"
+			href="styles.css"
+		/>
+		<script
+			src="main.js"
+			defer
+		></script>
+	</head>
+	<body>
+		<audio
+			autoplay
+			loop
+			id="bgmusic"
+		>
+			<source
+				src="../Bounty-hunting/bountyposters/Cowboy Standoff Music Sound Effect.mp3"
+				type="audio/mpeg"
+			/>
+		</audio>
+		<div class="slider">
+			<div class="posters">
+				<div class="card">
+					<img
+						src="../Bounty-hunting/bountyposters/imagebobdalton.png"
+						alt="Bob Dalton"
+						onclick="selectCard(this)"
+					/>
+					<div class="card-overlay">
+						<p class="bounty-name">Bob Dalton</p>
+						<p class="bounty-reward">
+							&#9888; REWARD: $10,000 DEAD OR ALIVE
+						</p>
+						<p class="bounty-desc">
+							Leader of the Dalton Gang. Armed and
+							dangerous.
+						</p>
+						<button onclick="takeBounty(this)">
+							🤠 Take the Bounty
+						</button>
+						<button onclick="skipBounty(this)">
+							✖ Pass
+						</button>
+					</div>
+				</div>
+
+				<div class="card">
+					<img
+						src="../Bounty-hunting/bountyposters/imagebilly.png"
+						alt="Billy the Kid"
+						onclick="selectCard(this)"
+					/>
+					<div class="card-overlay">
+						<p class="bounty-name">Billy the Kid</p>
+						<p class="bounty-reward">
+							&#9888; REWARD: $7,000 DEAD OR ALIVE
+						</p>
+						<p class="bounty-desc">
+							Wanted for murder and theft across New Mexico.
+						</p>
+						<button onclick="takeBounty(this)">
+							🤠 Take the Bounty
+						</button>
+						<button onclick="skipBounty(this)">
+							✖ Pass
+						</button>
+					</div>
+				</div>
+
+				<div class="card">
+					<img
+						src="../Bounty-hunting/bountyposters/imagejesse.png"
+						alt="Jesse James"
+						onclick="selectCard(this)"
+					/>
+					<div class="card-overlay">
+						<p class="bounty-name">Jesse James</p>
+						<p class="bounty-reward">
+							&#9888; REWARD: $20,000 DEAD OR ALIVE
+						</p>
+						<p class="bounty-desc">
+							Notorious outlaw and train robber. Highly
+							dangerous.
+						</p>
+						<button onclick="takeBounty(this)">
+							🤠 Take the Bounty
+						</button>
+						<button onclick="skipBounty(this)">
+							✖ Pass
+						</button>
+					</div>
+				</div>
+
+				<div class="card">
+					<img
+						src="../Bounty-hunting/bountyposters/imagebutch.png"
+						alt="Butch Cassidy"
+						onclick="selectCard(this)"
+					/>
+					<div class="card-overlay">
+						<p class="bounty-name">Butch Cassidy</p>
+						<p class="bounty-reward">
+							&#9888; REWARD: $5,000 DEAD OR ALIVE
+						</p>
+						<p class="bounty-desc">
+							Leader of the Wild Bunch. Expert bank robber.
+						</p>
+						<button onclick="takeBounty(this)">
+							🤠 Take the Bounty
+						</button>
+						<button onclick="skipBounty(this)">
+							✖ Pass
+						</button>
+					</div>
+				</div>
+
+				<div class="card">
+					<img
+						src="../Bounty-hunting/bountyposters/imagejhon.png"
+						alt="John Wesley Hardin"
+						onclick="selectCard(this)"
+					/>
+					<div class="card-overlay">
+						<p class="bounty-name">John Wesley Hardin</p>
+						<p class="bounty-reward">
+							&#9888; REWARD: $15,000 DEAD OR ALIVE
+						</p>
+						<p class="bounty-desc">
+							One of the most deadly gunfighters of the
+							West.
+						</p>
+						<button onclick="takeBounty(this)">
+							🤠 Take the Bounty
+						</button>
+						<button onclick="skipBounty(this)">
+							✖ Pass
+						</button>
+					</div>
+				</div>
+
+				<div class="card">
+					<img
+						src="../Bounty-hunting/bountyposters/semboss.png"
+						alt="Sam Bass"
+						onclick="selectCard(this)"
+					/>
+					<div class="card-overlay">
+						<p class="bounty-name">Sam Bass</p>
+						<p class="bounty-reward">
+							&#9888; REWARD: $2,000 DEAD OR ALIVE
+						</p>
+						<p class="bounty-desc">
+							Texas outlaw wanted for stagecoach robbery.
+						</p>
+						<button onclick="takeBounty(this)">
+							🤠 Take the Bounty
+						</button>
+						<button onclick="skipBounty(this)">
+							✖ Pass
+						</button>
+					</div>
+				</div>
+
+				<div class="card">
+					<img
+						src="../Bounty-hunting/bountyposters/redstar.png"
+						alt="Belle Starr"
+						onclick="selectCard(this)"
+					/>
+					<div class="card-overlay">
+						<p class="bounty-name">Belle Starr</p>
+						<p class="bounty-reward">
+							&#9888; REWARD: $8,000 DEAD OR ALIVE
+						</p>
+						<p class="bounty-desc">
+							The Bandit Queen. Do not underestimate her.
+						</p>
+						<button onclick="takeBounty(this)">
+							🤠 Take the Bounty
+						</button>
+						<button onclick="skipBounty(this)">
+							✖ Pass
+						</button>
+					</div>
+				</div>
+
+				<div class="card">
+					<img
+						src="../Bounty-hunting/bountyposters/bill.png"
+						alt="Bill Doolin"
+						onclick="selectCard(this)"
+					/>
+					<div class="card-overlay">
+						<p class="bounty-name">Bill Doolin</p>
+						<p class="bounty-reward">
+							&#9888; REWARD: $30,000 DEAD OR ALIVE
+						</p>
+						<p class="bounty-desc">
+							Leader of the Doolin-Dalton gang. Still at
+							large.
+						</p>
+						<button onclick="takeBounty(this)">
+							🤠 Take the Bounty
+						</button>
+						<button onclick="skipBounty(this)">
+							✖ Pass
+						</button>
+					</div>
+				</div>
+			</div>
+			<button
+				class="next-btn"
+				onclick="slideNext()"
+			>
+				Next Poster ➔
+			</button>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,125 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	padding: 10px;
+	background-color: #a8743f;
+	overflow-x: hidden;
+	margin: 0;
+}
+
+.slider {
+	width: 100%;
+	overflow-x: hidden;
+	position: relative;
+	background: #a8743f;
+	padding: 10px;
+}
+
+.posters {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-evenly;
+	overflow: visible;
+	transition: transform 0.5s ease-in-out;
+	margin-top: 30dvh;
+}
+
+.card {
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+}
+
+img {
+	height: clamp(50px, 60vh, 400px);
+	width: auto;
+	display: block;
+	border: solid 5px rgb(0, 0, 0);
+	cursor: pointer;
+}
+
+img:hover {
+	scale: 1.05;
+}
+
+.card.selected img {
+	scale: 1.1;
+}
+
+.card-overlay {
+	display: none;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 12px;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	right: 10px;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.68);
+	border: 3px solid #caac8f;
+	z-index: 10;
+	padding: 20px;
+}
+
+.card.selected .card-overlay {
+	display: flex;
+}
+
+.bounty-name {
+	color: #caac8f;
+	font-size: 1.1rem;
+	font-family: serif;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin: 0;
+}
+
+.bounty-reward {
+	color: #f5d07a;
+	font-size: 0.82rem;
+	font-family: serif;
+	text-align: center;
+	margin: 0;
+	letter-spacing: 1px;
+}
+
+.bounty-desc {
+	color: #e0cbb0;
+	font-size: 0.78rem;
+	font-family: serif;
+	text-align: center;
+	margin: 0 0 6px 0;
+	line-height: 1.4;
+}
+
+button {
+	background-color: #241a0e;
+	color: #caac8f;
+	border: 2px solid #caac8f;
+	border-radius: 25px;
+	width: 160px;
+	height: 36px;
+	cursor: pointer;
+	font-size: 0.85rem;
+	transition:
+		background-color 0.2s ease,
+		color 0.2s ease;
+}
+
+button:hover {
+	background-color: #caac8f;
+	color: #241a0e;
+}
+
+.next-btn {
+	display: block;
+	margin: 50px auto 0 auto;
+}
